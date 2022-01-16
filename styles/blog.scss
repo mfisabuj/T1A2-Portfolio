@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(173, 202, 192);
+  
+}
+.navbar {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+    a:hover {
+        font-size: larger;
+        text-decoration: none;
+        }
+    }
+.container {
+    margin-left: 200px;
+    margin-right: 100px;
+    .sub-header {
+        text-align: center;
+    }
+    .card {
+        margin-top: 50px;
+        .blog-1, .blog-2, blog-3, blog-4, blog-5 {
+            margin-top: 50px;
+
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    
+    .navbar {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: small;
+    }
+    .container{
+        margin-left: 10px;
+        margin-right: 20px;
+        font-size: small;
+        .sub-header {
+            text-align: left;
+        }
+        .card {
+            margin-top: 10px;
+            .blog-1, .blog-2, blog-3, blog-4, blog-5 {
+                margin-top: 5px;
+            }
+        }
+    }
+
+}
